@@ -1,0 +1,2 @@
+# Advanced-Machine-Learning-Techniques-211--Deema-Abdullah
+A five‑day cumulative machine‑learning project for the SDA‑DSC‑211 course. The repository includes baseline models, honest validation, Optuna tuning, imbalance handling, model interpretation, calibration, ensemble evaluation, and a final reproducible inference pipeline with reports, evidence files, predictions, and a five‑slide presentation.
