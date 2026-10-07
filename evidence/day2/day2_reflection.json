@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "leak_example": "The fields 'days_past_due_60' and 'collection_calls' were removed because they contain information that becomes available only after the application. At prediction time, this information would not yet be known, so keeping these fields would create data leakage.",
+    "split_reason": "I used time ordering because the model should learn from earlier applications and evaluate later ones. I also separated customers so the same customer does not appear in both training and validation within a fold; all three folds had zero shared customers. The strict 90-day maturity rule ensures that a training outcome was already known before the validation period began.",
+    "observed_gap": "The AP gap between the leaky random and clean random protocols was 0.6879, showing how strongly post-outcome information can inflate the reported performance. The gap between clean random and honest fixed validation was -0.0044, which was very small. These results do not prove that one validation approach is universally better because the protocols use different populations and time periods, and the three folds are not independent experiments.",
+    "imputer_reason": "Imputation must be learned only from the training data so that information from validation rows does not enter the preprocessing step. The inner stopping set is used for early stopping and controls the number of trees without using the outer validation data for that decision.",
+    "limitations": "The Optuna search was limited to 8 trials and 120 seconds, so it explored only a small number of parameter combinations. Also, OOF predictions covered 5,039 applications, or 50.39% of the clean dataset, while 4,961 warm-up rows had no OOF predictions. The three forward folds are related time periods, so these results are not a final independent test."
+  },
+  "checkpoint": {
+    "status": "READY_FOR_REVIEW",
+    "missing": [],
+    "automatic_grade": null
+  }
+}
