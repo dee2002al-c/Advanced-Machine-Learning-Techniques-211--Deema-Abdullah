@@ -294,6 +294,7 @@ The following tree lists the project files by their repository paths.
 │   ├── 03_cost_sensitive_decision.ipynb
 │   ├── 04_explain_calibrate.ipynb
 │   ├── 05_final_model.ipynb
+│   ├── SDA_DSC_211_Tamweel_Lite.ipynb
 │   └── 99_final_submission_check.ipynb
 ├── presentation/
 │   └── final_presentation.pdf
@@ -322,6 +323,7 @@ The following tree lists the project files by their repository paths.
 ├── ENSEMBLE_DECISION.md
 ├── INTERPRETABILITY_REPORT.md
 ├── metrics.json
+├── SDA_DSC_211_Tamweel_Lite.ipynb
 ├── MODEL_CARD.md
 ├── PROJECT_README.md
 ├── README.md
