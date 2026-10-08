@@ -121,6 +121,216 @@ No challenge outcome labels were available. Therefore **challenge AP, recall, de
 | Final presentation | [`final_presentation.pdf`](presentation/final_presentation.pdf) |
 | Evidence and additional reports | [`evidence/`](evidence/) · [`reports/`](reports/) |
 
+## Repository Structure
+
+The following tree lists the project files by their repository paths.
+
+```text
+.
+├── artifacts/
+│   ├── final_model/
+│   │   ├── model.json
+│   │   └── model_manifest.json
+│   ├── best_params.json
+│   ├── calibration_metrics.json
+│   ├── cost_curve.png
+│   ├── data_check.json
+│   ├── day1_comparison_predictions.csv
+│   ├── day1_learning_curves.png
+│   ├── day1_model_comparison.csv
+│   ├── day1_reflection.json
+│   ├── day1_roc_pr.png
+│   ├── day1_run.json
+│   ├── day1_split_membership.csv
+│   ├── day2_fold_sizes.png
+│   ├── day2_oof_coverage.csv
+│   ├── day2_oof_predictions.csv
+│   ├── day2_provenance.json
+│   ├── day2_reflection.json
+│   ├── day2_run.json
+│   ├── day2_search.png
+│   ├── day2_validation_comparison.png
+│   ├── day3_capacity_regions.png
+│   ├── day3_cost_sensitivity.csv
+│   ├── day3_model_comparison.csv
+│   ├── day3_model_report.csv
+│   ├── day3_oof_coverage.csv
+│   ├── day3_oof_predictions.csv
+│   ├── day3_period_capacity.csv
+│   ├── day3_provenance.json
+│   ├── day3_reflection.json
+│   ├── day3_region_audit.csv
+│   ├── day3_review_flags.csv
+│   ├── day3_roc_pr.png
+│   ├── day3_run.json
+│   ├── day4_bootstrap.csv
+│   ├── day4_capacity.csv
+│   ├── day4_local_stability.csv
+│   ├── day4_model.txt
+│   ├── day4_period_metrics.csv
+│   ├── day4_policy_sweep.csv
+│   ├── day4_predictions.csv
+│   ├── day4_provenance.json
+│   ├── day4_reason_codes.csv
+│   ├── day4_reflection.json
+│   ├── day4_reliability_bins.csv
+│   ├── day4_review_flags.csv
+│   ├── day4_roles.csv
+│   ├── day4_run.json
+│   ├── day4_shap_global.csv
+│   ├── day4_shap_metadata.json
+│   ├── day4_stability_summary.json
+│   ├── day5_calibration_fit.png
+│   ├── day5_calibration_fit_bins.csv
+│   ├── day5_calibration_predictions.csv
+│   ├── day5_challenge_capacity.png
+│   ├── day5_cost_sensitivity.csv
+│   ├── day5_diversity.png
+│   ├── day5_ensemble_comparison.png
+│   ├── day5_ensemble_gate.json
+│   ├── day5_final_provenance.json
+│   ├── day5_fold_scores.csv
+│   ├── day5_oof_predictions.csv
+│   ├── day5_oof_provenance.json
+│   ├── day5_period_capacity.csv
+│   ├── day5_policy_regions.png
+│   ├── day5_probability_correlation.csv
+│   ├── day5_project_check.json
+│   ├── day5_reflection.json
+│   ├── day5_region_audit.csv
+│   ├── day5_residual_correlation.csv
+│   ├── day5_roles.csv
+│   ├── day5_run.json
+│   ├── day5_threshold_sweep.csv
+│   ├── ensemble_comparison.csv
+│   ├── environment.json
+│   ├── final_metrics.json
+│   ├── final_policy.json
+│   ├── fold_audit.csv
+│   ├── leakage_audit.csv
+│   ├── optuna_results.csv
+│   ├── permutation_importance.csv
+│   ├── permutation_importance.png
+│   ├── readiness_report.json
+│   ├── reliability_curve.png
+│   ├── review_zone.png
+│   ├── runtime_checks.json
+│   ├── shap_beeswarm.png
+│   ├── shap_values_sample.npz
+│   ├── shap_waterfall.png
+│   ├── stability_summary.png
+│   ├── threshold_metrics.json
+│   ├── threshold_sweep.csv
+│   ├── validation_report.csv
+│   └── validation_summary.csv
+├── data/
+│   ├── data_contract.json
+│   ├── data_manifest.json
+│   ├── tamweel_challenge.csv
+│   └── tamweel_train.csv
+├── evidence/
+│   ├── day1/
+│   │   ├── day1_comparison_predictions.csv
+│   │   ├── day1_learning_curves.png
+│   │   ├── day1_model_comparison.csv
+│   │   ├── day1_reflection.json
+│   │   ├── day1_roc_pr.png
+│   │   ├── day1_run.json
+│   │   ├── day1_split_membership.csv
+│   │   └── environment.json
+│   ├── day2/
+│   │   ├── best_params.json
+│   │   ├── day2_reflection.json
+│   │   ├── day2_run.json
+│   │   ├── day2_validation_comparison.png
+│   │   ├── environment.json
+│   │   ├── fold_audit.csv
+│   │   ├── leakage_audit.csv
+│   │   ├── optuna_results.csv
+│   │   └── validation_summary.csv
+│   ├── day3/
+│   │   ├── cost_curve.png
+│   │   ├── day3_oof_predictions.csv
+│   │   ├── day3_reflection.json
+│   │   ├── day3_region_audit.csv
+│   │   ├── day3_run.json
+│   │   ├── DECISION_CARD.md
+│   │   ├── environment.json
+│   │   ├── threshold_metrics.json
+│   │   └── threshold_sweep.csv
+│   └── day4/
+│       ├── calibration_metrics.json
+│       ├── day4_bootstrap.csv
+│       ├── day4_capacity.csv
+│       ├── day4_local_stability.csv
+│       ├── day4_model.txt
+│       ├── day4_period_metrics.csv
+│       ├── day4_policy_sweep.csv
+│       ├── day4_predictions.csv
+│       ├── day4_provenance.json
+│       ├── day4_reason_codes.csv
+│       ├── day4_reflection.json
+│       ├── day4_reliability_bins.csv
+│       ├── day4_review_flags.csv
+│       ├── day4_roles.csv
+│       ├── day4_run.json
+│       ├── day4_shap_global.csv
+│       ├── day4_shap_metadata.json
+│       ├── day4_stability_summary.json
+│       ├── environment.json
+│       ├── INTERPRETABILITY_REPORT.md
+│       ├── permutation_importance.csv
+│       ├── permutation_importance.png
+│       ├── reliability_curve.png
+│       ├── review_zone.png
+│       ├── shap_beeswarm.png
+│       ├── shap_values_sample.npz
+│       ├── shap_waterfall.png
+│       └── stability_summary.png
+├── notebooks/
+│   ├── 00_readiness_check.ipynb
+│   ├── 01_baseline_boosting.ipynb
+│   ├── 02_validation_tuning.ipynb
+│   ├── 03_cost_sensitive_decision.ipynb
+│   ├── 04_explain_calibrate.ipynb
+│   ├── 05_final_model.ipynb
+│   └── 99_final_submission_check.ipynb
+├── presentation/
+│   └── final_presentation.pdf
+├── reports/
+│   ├── DECISION_CARD.md
+│   ├── ENSEMBLE_DECISION.md
+│   ├── INTERPRETABILITY_REPORT.md
+│   └── MODEL_CARD.md
+├── scripts/
+│   ├── day2_validation.py
+│   ├── day3_decision.py
+│   ├── day4_trust.py
+│   ├── day5_delivery.py
+│   ├── day5_final.py
+│   ├── inference.py
+│   ├── rebuild_final.py
+│   └── replay_final.py
+├── submission/
+│   ├── final_project_manifest.json
+│   └── submission.csv
+├── tamweel/
+│   ├── __init__.py
+│   └── inference.py
+├── constraints.txt
+├── DECISION_CARD.md
+├── ENSEMBLE_DECISION.md
+├── INTERPRETABILITY_REPORT.md
+├── metrics.json
+├── MODEL_CARD.md
+├── PROJECT_README.md
+├── README.md
+├── requirements-colab.txt
+└── submission.csv
+```
+
+**Note:** This tree is based on the final project bundle, with the subsequently uploaded `notebooks/99_final_submission_check.ipynb` included. Files added directly to GitHub after the bundle was generated should be verified against the current repository.
+
 ## Limitations and next steps
 
 - **Synthetic data only:** results do not establish real-world creditworthiness, deployment readiness, or regulatory compliance.
